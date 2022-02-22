@@ -2,6 +2,9 @@ const computerNumberWrapper = document.querySelector('.computer-number-wrapper')
 let numberWrapper
 let number
 const playBtn = document.getElementById("play-btn");
+let inputNumber = document.getElementsByClassName('.user-number').value;
+console.log(inputNumber);
+let userNumberArray = [];
 
 
 for (let i = 0; i < 5; i++) {
@@ -19,7 +22,7 @@ function stampaNumeriRandom() {
     let randomNumArray = [];
     numberElements = document.getElementsByClassName("number");
     for (let i = 0; i < 5; i++) {
-        const randomNum = (getRandomIntInclusive(1, 20))
+        const randomNum = (getRandomIntInclusive(1, 99))
         numberElements[i].innerText = randomNum;
         randomNumArray.push(randomNum);
     }
@@ -38,6 +41,9 @@ function timer() {
         // adesso prende l'index perchè l'ho inserito in un ciclo, ricordatelo pls!
     }
 }
+
+
+
 
 // FUNZIONI ------------------------------------
 
