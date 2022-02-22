@@ -30,10 +30,21 @@
     padding-top: 50px;
     padding-bottom: 30px;
 }
+
+#play-btn{
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(226, 226, 253);
+    color: 49, 10, 49;
+    border: 1px solid rgb(49, 10, 49);
+}
+
 .computer-number-wrapper{
     height: 50px;
     display: flex;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 .number-wrapper{
     width: 50px;
