@@ -13,15 +13,31 @@ for (let i = 0; i < 5; i++) {
     numberWrapper.append(number);
 }
 
-playBtn.addEventListener('click', function(){
-   numberElements= document.getElementsByClassName("number");
-   for (let i=0; i<5; i++){
-    numberElements[i].append(getRandomIntInclusive(1, 20));
-   }  
-})
+
+function stampaNumeriRandom() {
+    playBtn.removeEventListener('click', stampaNumeriRandom);
+    let randomNumArray = [];
+    numberElements = document.getElementsByClassName("number");
+    for (let i = 0; i < 5; i++) {
+        const randomNum = (getRandomIntInclusive(1, 20))
+        numberElements[i].innerText = randomNum;
+        randomNumArray.push(randomNum);
+    }
+    console.log(randomNumArray)
+    setTimeout(timer, 7000);
+}
 
 
+playBtn.addEventListener('click', stampaNumeriRandom);
+// (Ricordati di riscriverlo sull'event listener del btn invia)
 
+
+function timer() {
+    for (let i = 0; i < 5; i++) {
+        numberElements[i].innerText = ('');
+        // adesso prende l'index perchè l'ho inserito in un ciclo, ricordatelo pls!
+    }
+}
 
 // FUNZIONI ------------------------------------
 
