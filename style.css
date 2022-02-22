@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.main-container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(183, 220, 221, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgb(56, 0, 56);
+    box-shadow: 5px 5px 50px 5px rgba(56,0,56,0.81);
+    border-radius: 25px;
+    background-color: azure;
+    padding: 20px;
+    width: 800px;
+    height: 500px;
+
+}
+.title{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.computer-number-wrapper{
+    height: 50px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.number-wrapper{
+    width: 50px;
+    height: 100%;
+    border: 1px dotted blue;
+    background-color: rgb(195, 195, 255);
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number{
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(49, 10, 49);
+
+}
+
+.user-number-wrapper{
+    border: 1px dotted blue;
+    background-color: rgb(195, 195, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+label{
+    margin-right: 20px;
+}
+
+#user-number{
+    height: 40px;
+    width: 45px;
+    border-radius: 10px;
+    background-color: rgb(226, 226, 253);
+    border: 1px solid rgb(49, 10, 49);
+    margin-right: 5px;
+}
+
+#submit{
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(226, 226, 253);
+    color: 49, 10, 49;
+    border: 1px solid rgb(49, 10, 49);
+}
+

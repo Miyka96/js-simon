@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="main-container">
+
+        <div class="container">
+
+            <h1 class="title">Simon Say</h1>
+
+            <div class="computer-number-wrapper">
+                <div class="number-wrapper">
+                    <h4 class="number"></h4>
+                </div>
+                <div class="number-wrapper">
+                    <h4 class="number"></h4>
+                </div>
+                <div class="number-wrapper">
+                    <h4 class="number"></h4>
+                </div>
+                <div class="number-wrapper">
+                    <h4 class="number"></h4>
+                </div>
+                <div class="number-wrapper">
+                    <h4 class="number"></h4>
+                </div>
+            </div>
+
+            <div class="user-number-wrapper">
+                <label for="user-number">Inserisci i numeri che hai visto:</label>
+                <input type="number" id="user-number" name="user-number" min="1" max="20">
+                <input type="number" id="user-number" name="user-number" min="1" max="20">
+                <input type="number" id="user-number" name="user-number" min="1" max="20">
+                <input type="number" id="user-number" name="user-number" min="1" max="20">
+                <input type="number" id="user-number" name="user-number" min="1" max="20">
+            </div>
+            <div>
+                <input id="submit" type="submit" value="Invia">
+            </div>
+        </div>
+
+    </div>
+
     <script src="app.js"></script>
+    
 </body>
+
 </html>
