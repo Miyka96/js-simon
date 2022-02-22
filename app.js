@@ -24,10 +24,6 @@ playBtn.addEventListener('click', function(){
 
 
 // FUNZIONI ------------------------------------
-function generateFiveNumbers (){
-        let random = getRandomIntInclusive(1, 20);
-        return (random)           
-}
 
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
